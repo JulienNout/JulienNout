@@ -1,0 +1,19 @@
+body {
+    color: red;
+    background-color: fuchsia;
+}
+
+article {
+    color: red;
+}
+
+.first {
+    color: blue;
+}
+
+h1 {
+    color: blue;
+    font-size: 60pt;
+    text-decoration: underline;
+    background-color: green;
+}
