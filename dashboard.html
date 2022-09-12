@@ -2,69 +2,292 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>your-title-here</title>
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>your-title-here</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .year_table {
+      border: 4px black solid;
+      border-collapse: collapse;
+      width: 99%;
+    }
+
+    td {
+      border: 4px white solid;
+
+    }
+
+    thead {
+      background-color: #0C64C6;
+    }
+
+    .table_title {
+      color: #0C64C6;
+      padding-bottom: 20px;
+    }
+
+
+    .first_row {
+      font-family: 'Fira sans', sans-serif;
+      font-size: 22px;
+      color: white;
+    }
+
+    .second_row {
+      background-color: #95b6fa;
+      color: white;
+    }
+
+    .third_row {
+      background-color: #85a9fa;
+      color: white;
+    }
+
+    .fourth_row {
+      background-color: #759cfa;
+      color: white;
+    }
+
+    .fifth_row {
+      background-color: #668ffb;
+      color: white;
+    }
+
+    .sixth_row {
+      background-color: #5682fb;
+      color: white;
+    }
+
+    .seventh_row {
+      background-color: #4675fb;
+      color: white;
+    }
+
+    .passed {
+      background-color: green;
+    }
+
+    .failed {
+      background-color: red;
+    }
+
+
+
+    .progress {
+      margin: 50px auto;
+      padding: 2px;
+      width: 100%;
+      max-width: 500px;
+      height: 30px;
+    }
+
+    .progress .progress__bar {
+      height: 100%;
+      width: 0%;
+      background-color: #05e35e;
+      animation: fill-bar 6s infinite;
+    }
+
+    @keyframes fill-bar {
+      from {
+        width: 0%;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <img src="img/hz-logo.jpg" alt="hz logo" class="logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="profile.html">My Profile</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="faq.html">FAQ</a>
-            <a href="blog.html">Blog</a>
-        </nav>
-    </header>
-    <div class="main">
-        <aside class="left">
-            LEFT
-        </aside>
-        <main>
-            <article>
+  <header>
+    <img src="img/hz-logo.jpg" alt="hz logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="profile.html">My Profile</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </header>
+  <div class="main">
+    <aside class="left">
 
-            </article>
-        </main>
-        <aside class="right">
-            RIGHT
-        </aside>
-    </div>
-    <section class="footer">
-        <div class="social">
-          <b href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-          <b href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+    </aside>
+
+    <main>
+      <h1 class="table_title">My Dashboard</h1>
+      <table class="year_table">
+        <thead>
+          <tr class="first_row">
+            <td>Quarter</td>
+            <td>Course</td>
+            <td>ECs</td>
+            <td>Exam</td>
+            <td>Grade Awarded</td>
+          </tr>
+        </thead>
+        <tbody>
+          <!--Quartile 1-->
+          <tr class="second_row">
+            <td rowspan="4">1</td>
+            <td>Program & Career Orientation</td>
+            <td>2,5</td>
+            <td>Assessment Website</td>
+            <td>-</td>
+          </tr>
+          <tr class="second_row">
+            <!--Part of row Quarter 1-->
+            <td>Computer Science Bascis</td>
+            <td>5</td>
+            <td>Written Knowledge</td>
+            <td>-</td>
+          </tr>
+          <tr class="second_row">
+            <!--Part of row Quarter 1-->
+            <td rowspan="2">Programming Basics</td>
+            <td>5</td>
+            <td>Case Study Exam</td>
+            <td>-</td>
+          </tr>
+          <tr class="second_row">
+            <!--Part of row Quarter 1-->
+            <!--Part of Programming Basics-->
+            <td>5</td>
+            <td>Case Study Exam</td>
+            <td>-</td>
+          </tr>
+          <!--Quartile 2-->
+          <tr class="third_row">
+            <td rowspan="2">2</td>
+            <td rowspan="2">Object Oriented Programming</td>
+            <td rowspan="2">10</td>
+            <td>Case Study (50%)</td>
+            <td>-</td>
+          </tr>
+          <tr class="third_row">
+            <!--Part of row Quarter 2-->
+            <!--Part of Object Oriented Programming-->
+            <td>Project (50%)</td>
+            <td>-</td>
+          </tr>
+          <!--Quartile 3-->
+          <tr class="fourth_row">
+            <td rowspan="5">3</td>
+            <td>Framework Development 1</td>
+            <td>5</td>
+            <td>Case Study</td>
+            <td>-</td>
+          </tr>
+          <tr class="fourth_row">
+            <!--Part of row Quarter 3-->
+            <td rowspan="4">Framework Project 1</td>
+            <td rowspan="4">7,5</td>
+          </tr>
+          <tr class="fourth_row">
+            <!--Part of Quarter 3-->
+            <!--Part of Framework Project 1-->
+            <td>Project</td>
+            <td>-</td>
+          </tr>
+          <tr class="fourth_row">
+            <!--Part of Quarter 3-->
+            <!--Part of Framework Project 1-->
+            <td>Case Study Exam</td>
+            <td>-</td>
+          </tr>
+          <tr class="fourth_row">
+            <!--Part of Quarter 3-->
+            <!--Part of Framework Project 1-->
+            <td>Report</td>
+            <td>-</td>
+          </tr>
+          <!--Quartile 4-->
+          <tr class="fifth_row">
+            <td rowspan="3">4</td>
+            <td rowspan="3">Framework Project 2</td>
+            <td rowspan="3">10</td>
+            <td>Portfolio (50%)</td>
+            <td>-</td>
+          </tr>
+          <tr class="fifth_row">
+            <td>Project (25%)</td>
+            <td>-</td>
+          </tr>
+          <tr class="fifth_row">
+            <td>Assessment (25%)</td>
+            <td>-</td>
+          </tr>
+          <!--The Entire Year-->
+          <tr class="sixth_row">
+            <td colspan="2">The Entire Year</td>
+            <td>12,5</td>
+            <td>Portfolio</td>
+            <td>-</td>
+          </tr>
+          <!--Whenever-->
+          <tr class="seventh_row">
+            <td rowspan="2">Whenever</td>
+            <td>Personality 1</td>
+            <td>1,25</td>
+            <td>Portfolio</td>
+            <td>-</td>
+          </tr>
+          <!--Part of Whenever-->
+          <tr class="seventh_row">
+            <td>Personality 2</td>
+            <td>1,25</td>
+            <td>Portfolio</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="progress">
+        <div class="progress__bar"></div>
+        <h1 style="font-size: 15px; color:#0C64C6;">NBSA</h1>
+      </div>
+    </main>
+
+    <aside class="right">
+
+    </aside>
+  </div>
+  <section class="footer">
+    <div class="social">
+      <b href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <b href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
           <b href="https://twitter.com/twitter"><i class="fab fa-twitter"></i></a>
-          <b href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-        </div>
-    
-        <ul class="list">
-          <li>
-            <b href="#">Home</a>
-          </li>
-          <li>
-            <b href="#">Services</a>
-          </li>
-          <li>
-            <b href="#">About</a>
-          </li>
-          <li>
-            <b href="#">Terms</a>
-          </li>
-          <li>
-            <b href="#">Privacy Policy</a>
-          </li>
-        </ul>
-        <p class="copyright">
-          Julien Nout @ 2022
-        </p>
-      </section>
+            <b href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <ul class="list">
+      <li>
+        <b href="#">Home</a>
+      </li>
+      <li>
+        <b href="#">Services</a>
+      </li>
+      <li>
+        <b href="#">About</a>
+      </li>
+      <li>
+        <b href="#">Terms</a>
+      </li>
+      <li>
+        <b href="#">Privacy Policy</a>
+      </li>
+    </ul>
+    <p class="copyright">
+      Julien Nout @ 2022
+    </p>
+  </section>
 </body>
 
 </html>
