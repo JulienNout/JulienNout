@@ -5,122 +5,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>your-title-here</title>
-  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    .year_table {
-      border: 4px black solid;
-      border-collapse: collapse;
-      width: 99%;
-    }
-
-    td {
-      border: 4px white solid;
-
-    }
-
-    thead {
-      background-color: #0C64C6;
-    }
-
-    .table_title {
-      color: #0C64C6;
-      padding-bottom: 20px;
-    }
-
-
-    .first_row {
-      font-family: 'Fira sans', sans-serif;
-      font-size: 22px;
-      color: white;
-    }
-
-    .second_row {
-      background-color: #95b6fa;
-      color: white;
-    }
-
-    .third_row {
-      background-color: #85a9fa;
-      color: white;
-    }
-
-    .fourth_row {
-      background-color: #759cfa;
-      color: white;
-    }
-
-    .fifth_row {
-      background-color: #668ffb;
-      color: white;
-    }
-
-    .sixth_row {
-      background-color: #5682fb;
-      color: white;
-    }
-
-    .seventh_row {
-      background-color: #4675fb;
-      color: white;
-    }
-
-    .passed {
-      background-color: green;
-    }
-
-    .failed {
-      background-color: red;
-    }
-
-    .progress {
-      margin: 50px auto;
-      padding: 2px;
-      width: 100%;
-      max-width: 500px;
-      height: 30px;
-    }
-
-    .progress .progress__bar {
-      height: 100%;
-      width: 0%;
-      background-color: #05e35e;
-      animation: fill-bar 6s infinite;
-    }
-
-    @keyframes fill-bar {
-      from {
-        width: 0%;
-      }
-
-      to {
-        width: 100%;
-      }
-    }
-  </style>
+  <title>Dashboard</title>
 </head>
 
 <body>
-  <header>
-    <img src="img/hz-logo.png" alt="hz logo" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="profile.html">My Profile</a>
-      <a href="dashboard.html">Dashboard</a>
-      <a href="faq.html">FAQ</a>
-      <a href="blog.html">Blog</a>
-    </nav>
-  </header>
-  <div class="main">
-    <aside class="left">
 
-    </aside>
+  <!--Side Navigation Menu-->
+  <nav class="side-nav">
+    <img src="img/hz-logo.png" alt="hz logo" id="side-logo">
+    <ul class="side-nav-links">
 
-    <main>
-      <h1 class="table_title">My Dashboard</h1>
+      <li><a href="index.html">
+          <i class="fas fa-home"></i>
+          <span class="side-nav-item">Home</span>
+        </a></li>
+      <li><a href="profile.html">
+          <i class="fas fa-user"></i>
+          <span class="side-nav-item">Profile</span>
+        </a></li>
+      <li><a href="dashboard.html">
+          <i class="fa-solid fa-table-columns"></i>
+          <span class="side-nav-item">Dashboard</span>
+        </a></li>
+      <li><a href="faq.html">
+          <i class="fa-solid fa-question"></i>
+          <span class="side-nav-item">FAQ</span>
+        </a></li>
+      <li><a href="blog.html">
+          <i class="fa-solid fa-pen"></i>
+          <span class="side-nav-item">Blog</span>
+        </a></li>
+      <li><a href="https://learn.hz.nl/my/">
+          <i class="fa-solid fa-book"></i>
+          <span class="side-nav-item">HZ Learn</span>
+        </a></li>
+      <li><a href="https://www.microsoft.com/nl-nl/microsoft-teams/log-in">
+          <i class="fa-solid fa-people-group"></i>
+          <span class="side-nav-item">Teams</span>
+        </a></li>
+      <li><a href="https://portal.hz.nl">
+          <i class="fa-solid fa-user-plus"></i>
+          <span class="side-nav-item">MyHZ</span>
+        </a></li>
+    </ul>
+  </nav>
+
+  <!--Navigation Menu/Header-->
+  <nav class="top-nav">
+    <div class="logo-name">
+      <h4>Dashboard</h4>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="profile.html">My Profile</a>
+      </li>
+      <li>
+        <a href="dashboard.html">Dashboard</a>
+      </li>
+      <li>
+        <a href="faq.html">FAQ</a>
+      </li>
+      <li>
+        <a href="blog.html">Blog</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--Main contents of page-->
+  <section class="dashboard-main">
+    <div class="box">
+      <h1 class="table_title">NBSA 0/60</h1>
       <table class="year_table">
         <thead>
           <tr class="first_row">
@@ -248,39 +212,34 @@
         </tbody>
       </table>
 
-      <div class="progress">
-        <div class="progress__bar"></div>
-        <h1 style="font-size: 15px; color:#0C64C6;">NBSA</h1>
-      </div>
-    </main>
+    </div>
+  </section>
 
-    <aside class="right">
-
-    </aside>
-  </div>
+  <!--Footer and links-->
   <section class="footer">
     <div class="social">
-      <b href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-        <b href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-          <b href="https://twitter.com/twitter"><i class="fab fa-twitter"></i></a>
-            <b href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.snapchat.com"><i class="fab fa-snapchat"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
     </div>
 
     <ul class="list">
       <li>
-        <b href="#">Home</a>
+        <a href="index.html">Home</a>
       </li>
       <li>
-        <b href="#">Services</a>
+        <a href="#">Services</a>
       </li>
       <li>
-        <b href="#">About</a>
+        <a href="#">About</a>
       </li>
       <li>
-        <b href="#">Terms</a>
+        <a
+          href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf">CER</a>
       </li>
       <li>
-        <b href="#">Privacy Policy</a>
+        <a href="https://github.com">GitHub</a>
       </li>
     </ul>
     <p class="copyright">

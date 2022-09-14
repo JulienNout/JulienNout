@@ -2,69 +2,133 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My profile</title>
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Home</title>
 </head>
 
 <body>
-    <header>  
-      <img src="img/hz-logo.png" alt="hz logo" class="logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="profile.html">My Profile</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="faq.html">FAQ</a>
-            <a href="blog.html">Blog</a>
-        </nav>
-    </header>
-    <div class="main">
-        <aside class="left">
-            LEFT
-        </aside>
-        <main>
-            <article>
-            MIDDLE
-            </article>
-        </main>
-        <aside class="right">
-            RIGHT
-        </aside>
+  <!--Side Navigation Menu-->
+  <nav class="side-nav">
+    <img src="img/hz-logo.png" alt="hz logo" id="side-logo">
+    <ul class="side-nav-links">
+
+      <li><a href="index.html">
+          <i class="fas fa-home"></i>
+          <span class="side-nav-item">Home</span>
+        </a></li>
+      <li><a href="profile.html">
+          <i class="fas fa-user"></i>
+          <span class="side-nav-item">Profile</span>
+        </a></li>
+      <li><a href="dashboard.html">
+          <i class="fa-solid fa-table-columns"></i>
+          <span class="side-nav-item">Dashboard</span>
+        </a></li>
+      <li><a href="faq.html">
+          <i class="fa-solid fa-question"></i>
+          <span class="side-nav-item">FAQ</span>
+        </a></li>
+      <li><a href="blog.html">
+          <i class="fa-solid fa-pen"></i>
+          <span class="side-nav-item">Blog</span>
+        </a></li>
+      <li><a href="#">
+          <i class="fa-solid fa-book"></i>
+          <span class="side-nav-item">HZ Learn</span>
+        </a></li>
+      <li><a href="#">
+          <i class="fa-solid fa-people-group"></i>
+          <span class="side-nav-item">Teams</span>
+        </a></li>
+      <li><a href="#">
+          <i class="fa-solid fa-user-plus"></i>
+          <span class="side-nav-item">MyHZ</span>
+        </a></li>
+    </ul>
+  </nav>
+
+  <!--Navigation Menu/Header-->
+  <nav class="top-nav">
+    <div class="logo-name">
+      <h4>Home</h4>
     </div>
-    <section class="footer">
-        <div class="social">
-          <b href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-          <b href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-          <b href="https://twitter.com/twitter"><i class="fab fa-twitter"></i></a>
-          <b href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-        </div>
-    
-        <ul class="list">
-          <li>
-            <b href="#">Home</a>
-          </li>
-          <li>
-            <b href="#">Services</a>
-          </li>
-          <li>
-            <b href="#">About</a>
-          </li>
-          <li>
-            <b href="#">Terms</a>
-          </li>
-          <li>
-            <b href="#">Privacy Policy</a>
-          </li>
-        </ul>
-        <p class="copyright">
-          Julien Nout @ 2022
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="profile.html">My Profile</a>
+      </li>
+      <li>
+        <a href="dashboard.html">Dashboard</a>
+      </li>
+      <li>
+        <a href="faq.html">FAQ</a>
+      </li>
+      <li>
+        <a href="blog.html">Blog</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--Main contents of page-->
+  <section class="index-main">
+    <div class="box">
+      <div class="paragraph-headers">
+        <h1>A Big Motivator?</h1>
+        <p style="color: black;">One of the main reasons why I believe that ICT at the HZ University of Applied Sciences
+          is the right choice for me comes from the fact that I enjoy learning/aquiring different skills.<br></br>Hoping
+          to eventually be able to express myself creatively using set skills and build stuff to look back on fondly.
         </p>
-      </section>
+        <h2>After Completing the Programm...</h2>
+        <p style="color: black;">My interests lie in game development, therefore I wish to study the subject matter
+          further after hopefully graduating.</p>
+      </div>
+      <img src="img/hz-middelburg.jpg" alt="hz-middelburg" class="hz-middelburg">
+      <img src="img/coding.jpg" alt="coding-image" class="coding-image">
+    </div>
+  </section>
+
+  <!--Footer and links-->
+  <section class="footer">
+    <div class="social">
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.snapchat.com"><i class="fab fa-snapchat"></i></a>
+      <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+    <ul class="list">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="#">Services</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a
+          href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/EN/6.-Regulations-Study-Programmes/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf">CER</a>
+      </li>
+      <li>
+        <a href="https://github.com">GitHub</a>
+      </li>
+    </ul>
+    <p class="copyright">
+      Julien Nout @ 2022
+    </p>
+  </section>
 </body>
 
 </html>
