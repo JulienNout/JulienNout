@@ -14,7 +14,6 @@
 
 nav {
     text-align: center;
-    padding-bottom: 50px;
     background-color: white;
 }
 
@@ -38,8 +37,8 @@ a:visited {
 }
 
 body {
+
     height: 95vh;
-    color: white;
     font-size: 24px;
     display: flex;
     flex-direction: column;
@@ -139,3 +138,9 @@ li {
     font-size: 10px;
     color: rgb(82, 80, 80);
 }
+
+/*Beginning Dashboard Table CSS*/
+
+
+
+/*End Dashboard Table CSS*/
