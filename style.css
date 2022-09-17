@@ -298,7 +298,8 @@ thead {
 /*Part of Main Conten FAQ*/
 .faq-main {
     padding: 50px 350px;
-    height: 100vh;
+    min-height: calc(100vh);
+    display: inline-block;
     display: inline-block;
     flex-direction: row-reverse;
     font-family: 'Open Sans', sans-serif;
