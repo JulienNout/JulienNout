@@ -333,7 +333,7 @@ details summary {
     flex-direction: column;
 }
 .blog-text-span {
-    color: #0C64C6;
+    color: #691f9f;
     font-size: 0.9rem;
 }
 .blog-text .blog-title {
@@ -342,7 +342,7 @@ details summary {
     color: #272727;
 }
 .blog-text .blog-title:hover {
-    color: #0C64C6;
+    color: #691f9f;
     transition: all 0.3s ease;
 }
 .blog-text p {
@@ -360,7 +360,7 @@ details summary {
     color: #0f0f0f;
 }
 .blog-text a:hover {
-    color: #0C64C6;
+    color: #691f9f;
     transition: all 0.3s ease;
 }
 /*Beginning Blog sites*/
